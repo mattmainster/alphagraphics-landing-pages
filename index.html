@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AlphaGraphics Landing Pages</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <script>
+    // Handle Netlify Identity redirects (invitation tokens, password resets)
+    if (window.location.hash.includes('invite_token') ||
+        window.location.hash.includes('confirmation_token') ||
+        window.location.hash.includes('recovery_token')) {
+      // Let the identity widget handle the token, then redirect to admin
+      window.netlifyIdentity.on('init', function() {
+        window.netlifyIdentity.on('login', function() {
+          window.location.href = '/admin/';
+        });
+      });
+    } else {
+      // No token - redirect to the Rancho landing page by default
+      window.location.href = '/rancho/';
+    }
+  </script>
+  <p style="font-family:sans-serif;text-align:center;margin-top:100px;color:#666">
+    Redirecting...
+  </p>
+</body>
+</html>
