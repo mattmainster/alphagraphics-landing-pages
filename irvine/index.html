@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="../css/styles.css">
   <!-- Google Ads Conversion Tracking - Replace with your actual snippet -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script> -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="font-body text-gray-800 antialiased">
 
@@ -558,5 +559,16 @@
     });
   </script>
 
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
