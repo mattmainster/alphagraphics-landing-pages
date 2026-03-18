@@ -1,0 +1,37 @@
+{
+  "location": "Irvine",
+  "phone": "(949) 331-9177",
+  "phoneTel": "9493319177",
+  "address": "16 Technology Drive, Suite 106",
+  "city": "Irvine, CA 92618",
+  "hours": "Mon\u2013Fri 8:00am\u20134:00pm",
+  "rating": "4.5",
+  "reviewCount": "19",
+  "heroHeadline": "Custom Window Wraps &\nStorefront Graphics in\nIrvine",
+  "heroSubheadline": "Transform your business storefront into a 24/7 marketing tool. Designed, printed, and professionally installed by your local Irvine team.",
+  "serviceAreas": "Tustin, Lake Forest, Mission Viejo, Costa Mesa, Newport Beach & Orange County",
+  "serviceAreasLong": "Tustin, Lake Forest, Mission Viejo, Costa Mesa, Newport Beach, and the greater Orange County area",
+  "portfolio": [
+    { "businessType": "Retail Store", "description": "Full storefront perforated window wrap \u2022 Irvine", "image": "" },
+    { "businessType": "Restaurant", "description": "Frosted glass privacy film with logo \u2022 Tustin", "image": "" },
+    { "businessType": "Dental Office", "description": "Full-color branded window graphics \u2022 Costa Mesa", "image": "" },
+    { "businessType": "Salon & Spa", "description": "Cut vinyl lettering + frosted accents \u2022 Lake Forest", "image": "" },
+    { "businessType": "Gym & Fitness", "description": "Perforated vinyl full wrap \u2022 Newport Beach", "image": "" },
+    { "businessType": "Professional Services", "description": "Branded privacy film + hours \u2022 Mission Viejo", "image": "" }
+  ],
+  "testimonials": [
+    { "quote": "Add your best customer review here. Choose one that mentions quality, speed, or professionalism.", "name": "Customer Name", "business": "Business Name, Irvine" },
+    { "quote": "Add another review. Ideally one about how the signage helped their business.", "name": "Customer Name", "business": "Business Name, Tustin" },
+    { "quote": "Add a third review. Great if it mentions the team by name or repeat business.", "name": "Customer Name", "business": "Business Name, Costa Mesa" }
+  ],
+  "faq": [
+    { "question": "How long do window wraps last?", "answer": "Our window wraps are made with premium vinyl materials rated for 5\u20137 years of outdoor use. With proper care, many last even longer. All installations come with our full warranty." },
+    { "question": "Can I still see out through the window wraps?", "answer": "Yes! Our perforated window vinyl is designed for one-way visibility. From the outside, people see your full-color graphics. From the inside, you can see through clearly. Natural light still comes in." },
+    { "question": "How long does the process take?", "answer": "Most projects go from approved design to completed installation in 5\u20137 business days. Rush options are available if you need it sooner. We\u2019ll give you a timeline with your quote." },
+    { "question": "Do you handle the design?", "answer": "We handle everything. Our design team will create a custom mockup based on your brand, vision, and space. If you have existing artwork or brand guidelines, we\u2019ll work from those. Design consultation is included." },
+    { "question": "Will the wraps damage my windows?", "answer": "No. Our vinyl is specifically designed for commercial glass and removes cleanly without residue or damage. Perfect for leased spaces or seasonal promotions." },
+    { "question": "How much do window wraps cost?", "answer": "Pricing depends on the size of your windows, type of material, and complexity of the design. Most storefront projects range from $1,000 to $3,000. The best way to get an accurate price is to request your free same-day quote." },
+    { "question": "Do you serve businesses outside of Irvine?", "answer": "Absolutely! We regularly serve businesses throughout Tustin, Lake Forest, Mission Viejo, Costa Mesa, Newport Beach, and the greater Orange County area. Contact us to confirm we cover your area." },
+    { "question": "What types of businesses benefit from window wraps?", "answer": "Any business with street-facing windows! We\u2019ve done wraps for retail stores, restaurants, dental offices, salons, gyms, law firms, real estate offices, medical clinics, and more." }
+  ]
+}

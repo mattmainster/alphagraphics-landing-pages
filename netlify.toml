@@ -1,18 +1,6 @@
 [build]
-  publish = "."
-
-# Redirect /window-wraps to the rancho page (configure per site)
-# For Rancho site:
-# [[redirects]]
-#   from = "/window-wraps"
-#   to = "/rancho/index.html"
-#   status = 200
-
-# For Irvine site:
-# [[redirects]]
-#   from = "/window-wraps"
-#   to = "/irvine/index.html"
-#   status = 200
+  command = "npx @11ty/eleventy"
+  publish = "_site"
 
 # Security headers
 [[headers]]

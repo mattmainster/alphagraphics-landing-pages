@@ -1,0 +1,87 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/images"
+public_folder: "/images"
+
+collections:
+  - name: "rancho"
+    label: "Rancho Cucamonga Page"
+    files:
+      - name: "rancho-data"
+        label: "Page Content"
+        file: "src/_data/rancho.json"
+        fields:
+          - { label: "Location Name", name: "location", widget: "string" }
+          - { label: "Phone Number (display)", name: "phone", widget: "string" }
+          - { label: "Phone Number (digits only)", name: "phoneTel", widget: "string" }
+          - { label: "Street Address", name: "address", widget: "string" }
+          - { label: "City, State, Zip", name: "city", widget: "string" }
+          - { label: "Business Hours", name: "hours", widget: "string" }
+          - { label: "Star Rating", name: "rating", widget: "string" }
+          - { label: "Review Count", name: "reviewCount", widget: "string" }
+          - { label: "Hero Headline", name: "heroHeadline", widget: "text" }
+          - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text" }
+          - { label: "Service Areas (short, for footer)", name: "serviceAreas", widget: "string" }
+          - { label: "Service Areas (long, for FAQ)", name: "serviceAreasLong", widget: "string" }
+          - label: "Portfolio Items"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - { label: "Business Type", name: "businessType", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image", required: false }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Customer Name", name: "name", widget: "string" }
+              - { label: "Business & City", name: "business", widget: "string" }
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+
+  - name: "irvine"
+    label: "Irvine Page"
+    files:
+      - name: "irvine-data"
+        label: "Page Content"
+        file: "src/_data/irvine.json"
+        fields:
+          - { label: "Location Name", name: "location", widget: "string" }
+          - { label: "Phone Number (display)", name: "phone", widget: "string" }
+          - { label: "Phone Number (digits only)", name: "phoneTel", widget: "string" }
+          - { label: "Street Address", name: "address", widget: "string" }
+          - { label: "City, State, Zip", name: "city", widget: "string" }
+          - { label: "Business Hours", name: "hours", widget: "string" }
+          - { label: "Star Rating", name: "rating", widget: "string" }
+          - { label: "Review Count", name: "reviewCount", widget: "string" }
+          - { label: "Hero Headline", name: "heroHeadline", widget: "text" }
+          - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text" }
+          - { label: "Service Areas (short, for footer)", name: "serviceAreas", widget: "string" }
+          - { label: "Service Areas (long, for FAQ)", name: "serviceAreasLong", widget: "string" }
+          - label: "Portfolio Items"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - { label: "Business Type", name: "businessType", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image", required: false }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Customer Name", name: "name", widget: "string" }
+              - { label: "Business & City", name: "business", widget: "string" }
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
