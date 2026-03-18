@@ -1,0 +1,69 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "rancho-content"
+    label: "Rancho Cucamonga Page"
+    files:
+      - name: "rancho-settings"
+        label: "Page Settings"
+        file: "rancho/content.json"
+        fields:
+          - { label: "Business Name", name: "businessName", widget: "string", default: "AlphaGraphics Rancho Cucamonga" }
+          - { label: "Phone Number", name: "phone", widget: "string", default: "(909) 989-8550" }
+          - { label: "Address", name: "address", widget: "string", default: "8250 White Oak Avenue, Suite 101, Rancho Cucamonga, CA 91730" }
+          - { label: "Hours", name: "hours", widget: "string", default: "Mon-Fri 8:00am-4:30pm" }
+          - { label: "Star Rating", name: "rating", widget: "string", default: "4.8" }
+          - { label: "Review Count", name: "reviewCount", widget: "string", default: "109" }
+          - { label: "Hero Headline", name: "heroHeadline", widget: "string", default: "Custom Window Wraps & Storefront Graphics in Rancho Cucamonga" }
+          - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text", default: "Transform your business storefront into a 24/7 marketing tool. Designed, printed, and professionally installed by your local Rancho Cucamonga team." }
+          - { label: "Hero Background Image", name: "heroImage", widget: "image", required: false }
+          - label: "Portfolio Items"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Business Type", name: "businessType", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Customer Name", name: "customerName", widget: "string" }
+              - { label: "Business & City", name: "businessCity", widget: "string" }
+
+  - name: "irvine-content"
+    label: "Irvine Page"
+    files:
+      - name: "irvine-settings"
+        label: "Page Settings"
+        file: "irvine/content.json"
+        fields:
+          - { label: "Business Name", name: "businessName", widget: "string", default: "AlphaGraphics Irvine" }
+          - { label: "Phone Number", name: "phone", widget: "string", default: "(949) 830-8222" }
+          - { label: "Address", name: "address", widget: "string", default: "16 Technology Drive, Suite 106, Irvine, CA 92618" }
+          - { label: "Hours", name: "hours", widget: "string", default: "Mon-Fri 8:00am-4:00pm" }
+          - { label: "Star Rating", name: "rating", widget: "string", default: "4.5" }
+          - { label: "Review Count", name: "reviewCount", widget: "string", default: "19" }
+          - { label: "Hero Headline", name: "heroHeadline", widget: "string", default: "Custom Window Wraps & Storefront Graphics in Irvine" }
+          - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text", default: "Transform your business storefront into a 24/7 marketing tool. Designed, printed, and professionally installed by your local Irvine team." }
+          - { label: "Hero Background Image", name: "heroImage", widget: "image", required: false }
+          - label: "Portfolio Items"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Business Type", name: "businessType", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Customer Name", name: "customerName", widget: "string" }
+              - { label: "Business & City", name: "businessCity", widget: "string" }
