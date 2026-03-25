@@ -2,6 +2,19 @@
   command = "npx @11ty/eleventy"
   publish = "_site"
 
+# Host-based redirects: serve the correct landing page for each custom domain
+[[redirects]]
+  from = "/"
+  to = "/rancho/"
+  status = 200
+  conditions = {Host = "go.alphagraphicsrancho.com"}
+
+[[redirects]]
+  from = "/"
+  to = "/irvine/"
+  status = 200
+  conditions = {Host = "go.alphagraphicsirvine.com"}
+
 # Security headers
 [[headers]]
   for = "/*"
