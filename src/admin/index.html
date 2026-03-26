@@ -6,6 +6,25 @@
   <meta name="robots" content="noindex" />
   <title>AlphaGraphics Landing Page Admin</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+          /* Fix Decap CMS dropdown menus being clipped */
+          [class*="ToolbarContainer"],
+          [class*="AppHeaderContent"],
+          header[class*="AppHeader"] {
+                  overflow: visible !important;
+          }
+          [class*="DropdownList"],
+          [class*="dropdown"],
+          ul[role="listbox"] {
+                  z-index: 9999 !important;
+                  overflow: visible !important;
+          }
+          #nc-root header,
+          #nc-root [class*="Header"],
+          #nc-root [class*="Toolbar"] {
+                  overflow: visible !important;
+          }
+    </style>
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
