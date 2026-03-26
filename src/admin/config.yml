@@ -15,7 +15,7 @@ collections:
         fields:
           - { label: "Location Name", name: "location", widget: "string" }
           - { label: "Phone Number (display)", name: "phone", widget: "string" }
-          - { label: "Phone Number (digits only)", name: "phoneTel", widget: "string" }
+          - { label: "Phone Number (digits only)", name: "phoneTel", widget: "string", required: false }
           - { label: "Street Address", name: "address", widget: "string", required: false }
           - { label: "City, State, Zip", name: "city", widget: "string", required: false }
           - { label: "Business Hours", name: "hours", widget: "string", required: false }
@@ -23,6 +23,7 @@ collections:
           - { label: "Review Count", name: "reviewCount", widget: "string", required: false }
           - { label: "Hero Headline", name: "heroHeadline", widget: "text", required: false }
           - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text", required: false }
+          - { label: "Hero Background Image", name: "heroImage", widget: "image", required: false }
           - { label: "Service Areas (short, for footer)", name: "serviceAreas", widget: "string", required: false }
           - { label: "Service Areas (long, for FAQ)", name: "serviceAreasLong", widget: "string", required: false }
           - label: "Portfolio Items"
@@ -58,7 +59,7 @@ collections:
         fields:
           - { label: "Location Name", name: "location", widget: "string" }
           - { label: "Phone Number (display)", name: "phone", widget: "string" }
-          - { label: "Phone Number (digits only)", name: "phoneTel", widget: "string" }
+          - { label: "Phone Number (digits only)", name: "phoneTel", widget: "string", required: false }
           - { label: "Street Address", name: "address", widget: "string", required: false }
           - { label: "City, State, Zip", name: "city", widget: "string", required: false }
           - { label: "Business Hours", name: "hours", widget: "string", required: false }
@@ -66,6 +67,7 @@ collections:
           - { label: "Review Count", name: "reviewCount", widget: "string", required: false }
           - { label: "Hero Headline", name: "heroHeadline", widget: "text", required: false }
           - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text", required: false }
+          - { label: "Hero Background Image", name: "heroImage", widget: "image", required: false }
           - { label: "Service Areas (short, for footer)", name: "serviceAreas", widget: "string", required: false }
           - { label: "Service Areas (long, for FAQ)", name: "serviceAreasLong", widget: "string", required: false }
           - label: "Portfolio Items"
