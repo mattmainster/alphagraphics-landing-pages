@@ -9,7 +9,7 @@
 {%- set reviewCount = d.reviewCount -%}
 {%- set heroHeadline = d.heroHeadline -%}
 {%- set heroSubheadline = d.heroSubheadline -%}
-{%- set serviceAreas = d.serviceAreas -%}
+{%- set serviceAreas = d.serviceAreas -%
 {%- set serviceAreasLong = d.serviceAreasLong -%}
 {%- set portfolio = d.portfolio -%}
 {%- set testimonials = d.testimonials -%}
@@ -93,7 +93,7 @@
     <div class="absolute inset-0 bg-ag-dark">
       <div class="absolute inset-0 hero-overlay"></div>
       {% if heroImage %}
-      <img src="{{ heroImage }}" alt="Storefront window wrap transformation in {{ location }}" class="w-full h-full object-cover opacity-30">
+      <img src="{{ heroImage }}" alt="Storefront window wrap transformation in {{ location }}" class="w-full object-cover opacity-30">
       {% endif %}
     </div>
     <div class="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center text-white">
@@ -193,7 +193,7 @@
         {% for item in portfolio %}
         <div class="portfolio-item bg-white rounded-lg shadow-sm border border-ag-gray-border">
           {% if item.image %}
-          <img src="{{ item.image }}" alt="{{ item.businessType }}" class="aspect-[4/3] w-full h-full object-cover rounded-t-lg">
+          <img src="{{ item.image }}" alt="{{ item.businessType }}" class="aspect-[4/3] w-full object-cover rounded-t-lg">
           {% else %}
           <div class="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-gray-400">
             <div class="text-center p-6">
