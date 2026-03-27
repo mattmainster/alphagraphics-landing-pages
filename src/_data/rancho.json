@@ -2,33 +2,33 @@
   "heroImage": "/images/landing-page-hero_storefront-less-red.jpg",
   "portfolio": [
     {
-      "businessType": "Church",
-      "description": "Full Vinyl Window Wraps",
-      "image": "/images/landing-page-portfolio_storefronts-10.jpg"
-    },
-    {
-      "businessType": "Restaurant",
-      "description": "Frosted glass privacy film with logo • Ontario",
-      "image": "/images/landing-page-portfolio_storefronts-6.jpg"
-    },
-    {
-      "businessType": "Dental Office",
-      "description": "Full-color branded window graphics • Upland",
+      "businessType": "Office",
+      "description": "Branded window wraps and decals",
       "image": "/images/landing-page-portfolio_storefronts-9.jpg"
     },
     {
-      "businessType": "Salon & Spa",
-      "description": "Cut vinyl lettering + frosted accents • Fontana",
-      "image": "/images/landing-page-portfolio_storefronts-2.jpg"
+      "businessType": "Restaurant",
+      "description": "Privacy film with advertisement",
+      "image": "/images/landing-page-portfolio_storefronts-6.jpg"
     },
     {
-      "businessType": "Gym & Fitness",
-      "description": "Perforated vinyl full wrap • Claremont",
-      "image": "/images/landing-page-portfolio_storefronts-3.jpg"
+      "businessType": "Church",
+      "description": "Full-color vinyl window wraps",
+      "image": "/images/landing-page-portfolio_storefronts-10.jpg"
     },
     {
       "businessType": "Professional Services",
-      "description": "Branded privacy film + hours • Rancho Cucamonga",
+      "description": "Cut vinyl lettering + office hours",
+      "image": "/images/landing-page-portfolio_storefronts-2.jpg"
+    },
+    {
+      "businessType": "Local Store",
+      "description": "Die-cut window decals",
+      "image": "/images/landing-page-portfolio_storefronts-3.jpg"
+    },
+    {
+      "businessType": "Entertainment",
+      "description": "Vibrant color window and door wraps",
       "image": "/images/landing-page-portfolio_storefronts-4.jpg"
     }
   ],
