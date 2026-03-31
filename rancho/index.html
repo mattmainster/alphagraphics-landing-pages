@@ -32,8 +32,14 @@
     }
   </script>
   <link rel="stylesheet" href="../css/styles.css">
-  <!-- Google Ads Conversion Tracking - Replace with your actual snippet -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script> -->
+  <!-- Google Ads Conversion Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18030102057"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18030102057');
+  </script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="font-body text-gray-800 antialiased">
@@ -397,7 +403,7 @@
         <p class="text-xl text-gray-400">Tell us about your project and we&rsquo;ll get back to you today. No pressure, no obligation.</p>
       </div>
       <div class="bg-white rounded-lg shadow-2xl p-8 md:p-10">
-        <form action="#" method="POST" class="space-y-5" id="quote-request-form">
+        <form name="quote-request" method="POST" data-netlify="true" class="space-y-5" id="quote-request-form">
           <div class="grid sm:grid-cols-2 gap-5">
             <div>
               <label class="block text-sm font-semibold text-gray-700 mb-1.5">Your Name *</label>
@@ -560,6 +566,47 @@
     const header = document.querySelector('.site-header');
     window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+
+  <!-- Form Submission Handler with Google Ads Conversion Tracking -->
+  <script>
+    document.getElementById('quote-request-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      const formData = new FormData(form);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(response => {
+        if (response.ok) {
+          // Fire Google Ads conversion event
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-18030102057/nxtMCOaVsJMcEKmMtpVD',
+              'value': 1.0,
+              'currency': 'USD'
+            });
+          }
+          // Show success message
+          form.innerHTML = '<div class="text-center py-8"><div class="text-5xl mb-4">&#10003;</div><h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Thank You!</h3><p class="text-gray-600 text-lg">We received your quote request and will get back to you today.</p><p class="text-gray-500 mt-4">Or call/text us now: <a href="tel:9095528658" class="text-ag-red font-semibold">(909) 552-8658</a></p></div>';
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(error => {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        alert('Something went wrong. Please try again or call us at (909) 552-8658.');
+      });
     });
   </script>
 
